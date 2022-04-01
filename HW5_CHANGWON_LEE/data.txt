@@ -1,0 +1,10 @@
+Fri Apr  1 23:41:13 2022: Device1: Temp=3 Humid=76 Illum=16
+Fri Apr  1 23:41:14 2022: Device2: Heartbeat=76 Steps=3452 Cal=2435
+Fri Apr  1 23:41:14 2022: Device1: Temp=3 Humid=111 Illum=11
+Fri Apr  1 23:41:15 2022: Device2: Heartbeat=75 Steps=2391 Cal=1507
+Fri Apr  1 23:41:15 2022: Device1: Temp=5 Humid=77 Illum=72
+Fri Apr  1 23:41:16 2022: Device2: Heartbeat=74 Steps=4433 Cal=2685
+Fri Apr  1 23:41:16 2022: Device1: Temp=36 Humid=122 Illum=32
+Fri Apr  1 23:41:17 2022: Device2: Heartbeat=49 Steps=3248 Cal=1943
+Fri Apr  1 23:41:17 2022: Device1: Temp=11 Humid=100 Illum=80
+Fri Apr  1 23:41:17 2022: Device2: Heartbeat=135 Steps=5817 Cal=2152
