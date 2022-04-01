@@ -17,8 +17,8 @@ while True:
         print(data)
         if data == 'Request':
             temp = str(random.randrange(0, 41))
-            illum = str(random.randrange(0, 101))
-            humid = str(random.randrange(70, 151))
+            illum = str(random.randrange(70, 151))
+            humid = str(random.randrange(0, 101))
             total = temp + ' ' + humid + ' ' + illum
             print(total)
             client.send(total.encode())

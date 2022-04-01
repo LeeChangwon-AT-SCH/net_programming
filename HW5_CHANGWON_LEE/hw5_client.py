@@ -23,7 +23,7 @@ while True:
         humid = data[1]
         illum = data[2]
         t = time.asctime()
-        line = t + ':' + ' ' + 'Device1:' + ' ' + 'Temp=' + temp + ' Humid=' + humid + ' Illum=' + illum + '\n'
+        line = t + ':' + ' ' + 'Device1:' + ' ' + 'Temp=' + temp + ', Humid=' + humid + ', Illum=' + illum + '\n'
         print(line)
         f.write(line)
     elif msg == '2':
@@ -34,7 +34,7 @@ while True:
         steps = data[1]
         cal = data[2]
         t = time.asctime()
-        line = t + ':' + ' ' + 'Device2:' + ' ' + 'Heartbeat=' + heartbeat + ' Steps=' + steps + ' Cal=' + cal + '\n'
+        line = t + ':' + ' ' + 'Device2:' + ' ' + 'Heartbeat=' + heartbeat + ', Steps=' + steps + ', Cal=' + cal + '\n'
         print(line)
         f.write(line)
     # print('Get data: ', rsp)
