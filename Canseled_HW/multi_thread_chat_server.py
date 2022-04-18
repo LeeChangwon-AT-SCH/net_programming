@@ -10,18 +10,18 @@ clients = []
 def sendTask(conn):
     while True:
         data = conn.recv(BUFFSIZE)
-
+        print(data.decode())
         if 'quit' in data.decode():
-            if addr in  clients:
-                print(addr, 'exited')
-                clients.remove(addr)
-                continue
+            print(addr, 'exited')
+            clients.remove(conn)
+            break
 
         print(time.asctime() + str(addr) + ':' + data.decode())
 
         for client in clients:
             if client != conn:
                 client.send(data)
+    conn.close()
 
 sock = socket(AF_INET, SOCK_STREAM)
 sock.bind(('', port))
@@ -30,7 +30,7 @@ sock.listen(5)
 while True:
     conn, addr = sock.accept()
 
-    if addr not in clients:
+    if conn not in clients:
         print('new client', addr)
         clients.append(conn)
         
