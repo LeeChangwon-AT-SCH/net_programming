@@ -1,5 +1,4 @@
 from socket import *
-from sqlite3 import connect
 import time
 import selectors
 
